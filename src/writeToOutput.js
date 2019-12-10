@@ -1,3 +1,5 @@
+const fs = require('fs')
+
 const writeToOutput = (finalPosition, patchesCleaned) => {
   const data = `${finalPosition}\n${patchesCleaned.length}`
 

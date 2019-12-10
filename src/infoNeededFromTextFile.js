@@ -7,7 +7,6 @@ const infoNeededFromTextFile = () => {
   const patchesOfDirt = textByLine.slice(2)
 
   const endOfRoom = changeElement.turnTextIntoArray(textByLine[0])
-  console.log(textByLine[0])
   const currentPosition = changeElement.turnTextIntoArray(textByLine[1])
   let xPosition = currentPosition[0]
   let yPosition = currentPosition[1]

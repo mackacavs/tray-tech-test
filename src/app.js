@@ -5,9 +5,7 @@ const infoNeededFromTextFile = require('./infoNeededFromTextFile');
 
 const cleanedUp = () => {
   const info = infoNeededFromTextFile()
-  console.log(info)
   let positionsVisited = moveRoomba(info.roombaDirections, info.xPosition, info.yPosition, info.endOfRoom)
-  console.log(positionsVisited)
 
   positionsVisited = changeElement.turnArrayIntoText(positionsVisited)
 
@@ -16,5 +14,7 @@ const cleanedUp = () => {
 
   writeToOutput(finalPosition, patchesCleaned)
 };
+
+cleanedUp()
 
 exports.cleanedUp = cleanedUp;
