@@ -9,8 +9,8 @@ describe('Turn text into array', function () {
 })
 
 describe('Turn array into text', function () {
-  it('app should return [1,1] when input is "1 1"', function () {
-    assert.deepEqual(turnArrayIntoText(['1 3', '1 4', '2 4']), ["1 3", "1 4", '2 4'])
+  it('app should return ["1 3", "1 4", "2 4"] when input is [1, 3], [1, 4], [2, 4]', function () {
+    assert.deepEqual(turnArrayIntoText([[1, 3], [1, 4], [2, 4]]), ["1 3", "1 4", '2 4'])
   })
 
 })

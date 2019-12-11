@@ -3,7 +3,7 @@ const changeElement = require('./changeElement');
 const writeToOutput = require('./writeToOutput');
 const infoNeededFromTextFile = require('./infoNeededFromTextFile');
 
-const cleanedUp = () => {
+const app = () => {
   const info = infoNeededFromTextFile()
   let positionsVisited = moveRoomba(info.roombaDirections, info.xPosition, info.yPosition, info.endOfRoom)
 
@@ -15,6 +15,6 @@ const cleanedUp = () => {
   writeToOutput(finalPosition, patchesCleaned)
 };
 
-cleanedUp()
+app()
 
-exports.cleanedUp = cleanedUp;
+exports.app = app;
