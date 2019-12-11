@@ -49,7 +49,7 @@ Installation and Running The Program
 -----
 
 * Git clone the project into your own local repository
-* Using the terminal, move into the repository with the source code
+* Using the terminal, move into the repository where you've just cloned the repo
 * Run 'npm install' in your terminal to download the relevant node packages
 * Run 'node src/app.js' to see the output of the application
 
