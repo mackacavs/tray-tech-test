@@ -1,7 +1,7 @@
 Tray Tech Test
 =================
 
-For the Tray Tect Test my user storeis could be broken down as follows-
+For the Tray Tech Test my user stories could be broken down as follows-
 
 ```
 As a system designer 
