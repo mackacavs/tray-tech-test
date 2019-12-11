@@ -9,7 +9,7 @@ So I can see how efficient my robotic hoover is
 I want to be able to see how many patches of dirt it cleans up
 
 As an system designer 
-So I can see where my ends its route 
+So I can see where my Roomba ends its route 
 I want to get co-ordinates to tell me where my hoover finishes
 ```
 
