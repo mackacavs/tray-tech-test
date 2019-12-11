@@ -11,7 +11,6 @@ I want to be able to see how many patches of dirt it cleans up
 As an system designer 
 So I can see where my hoover finishes 
 I want to get co-ordinates to tell me where my hoover finishes
-
 ```
 
 The application has 6 modules - an app module that is run in the terminal, a canRoombaMove module that's responsibility is to judge whether the Roomba can move or if it's outside the pre-determined size of the room, a changeElement module that changes arrays into strings and vice-versa, an infoNeedFromTextFile that looks at the text file and returns any relevant information from it, a moveRoomba module that moves the Roomba based on the given directions and a writeToOutPut file that writes the results of the program to an output file as well as the console. 
@@ -46,7 +45,7 @@ Technologies Used
 * Mocha
   * I tested the application using Mocha and Chair
 
-Installation
+Installation and Running The Program
 -----
 
 * Git clone the project into your own local repository
@@ -54,8 +53,21 @@ Installation
 * Run 'npm install' in your terminal to download the relevant node packages
 * Run 'node src/app.js' to see the output of the application
 
-
 Tests
 -----
 
 Run 'npm run test' in order to see the tests in the terminal
+
+Final Note
+-----
+
+I wasn't certain where to source the input.txt file from. As I wasn't certain and because of time constraints I created my own input.txt file in the repo itself as you can see above. If I had had more time - and was certain that the task wanted me to retrieve a text file that was hosted either remotely by myself or in a different location - I'd have used Axios to retrieve the relevant data.
+
+The main difference that this would have made is that sourcing the file would have been an asynchornous process, so i'd have had to wait for the text file to have been fetched by Axios before running the rest of the code. My request may have looked something like this-
+
+```
+function getTextFile() {
+  axios.get('https://relevantwebaddress.com')
+    .then(res =>  startAppFunction(res))
+}
+```
