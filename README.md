@@ -31,6 +31,7 @@ A screenshot of the writeToOutput file - notice that it both writes the output t
 <img src="images/tests_run.png?" width="400px">
 
 A screenshot of one of the test specs
+
 <img src="images/tests.png?" width="400px">
 
 12/12 passing tests
